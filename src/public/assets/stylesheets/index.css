@@ -1,0 +1,98 @@
+/* -------------------  MOBILE  --------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  min-height: 100vh;
+}
+
+header {
+  /* header styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+button {
+  width: 10%;
+  height: 90%;
+  text-align: center;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+#riverInfo {
+  height: 90vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#rover {
+  width: 50%;
+  height: 70%;
+}
+#informations {
+  width: 100%;
+  text-align: center;
+}
+#floating {
+  position: absolute;
+  bottom: 5vh;
+  left: 50vw;
+  width: 5vw;
+  height: 5vh;
+}
+section {
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: center; */
+}
+.images {
+  width: 49%;
+  display: flex;
+  flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.image {
+  width: 100%;
+}
+.camName {
+  text-align: center;
+}
+
+/* -------------------  TABLET  --------------------- */
+
+@media (max-width: 990px) {
+  .images {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  button {
+    width: 25%;
+  }
+  #rover {
+    width: 80%;
+  }
+}
+
+/* -------------------  Mobile  --------------------- */
+
+@media (max-width: 768px) {
+  button {
+    width: 30%;
+  }
+  #rover {
+    width: 100%;
+  }
+}
